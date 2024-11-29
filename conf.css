@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    background-color: #1D2130;
+    color: #f1f1f1;
+}
+
+
+header {
+    flex-direction: column;
+    background-color: #212121;
+    display: flex;
+    color: #f1f1f1;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+.logo img {
+    height: 60px;
+    margin-left: 25px;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    justify-content: center;
+    border-top: 3px solid #00bcd4;
+}
+
+nav a {
+    margin-left: 35px;
+    font-size: 18px;
+    color: #ccc;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #00bcd4;
+    color: #fff;
+}
+
+
+#divBusca {
+    background-color: #333;
+    border-radius: 15px;
+    color: #f1f1f1;
+    margin: 20px auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+#txtBusca {
+    background-color: transparent;
+    border: none;
+    padding-left: 15px;
+    font-size: 18px;
+    width: 100%;
+    color: #f1f1f1;
+}
+
+header {
+    flex-direction: column;
+    background-color: #1D2130;
+    display: flex;
+    color: #f1f1f1;
+    width: 100%;
+    text-decoration: none;
+}
+
+header h1 {
+    text-align: center;
+    text-decoration: none;
+}
+
+.chris {
+    width: 100%;
+    background-color: #333;
+}
+
+.chris p {
+    margin-left: 20px;
+}
+
+.etc {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #483285;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    flex: 20%;
+    margin-left: 15px;
+    margin-top: 2px;
+    border-radius:120px;
+    margin-bottom: 5px;
+}
+
+.etc a{
+    text-decoration: none;
+    color: #ccc;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.tema {
+    flex: 20%;
+    text-align: right;
+   margin-left: 00px;
+}
+
+.lema {
+    flex: 30%;
+    text-align: right;
+    margin-right: 35%;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.lemas{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.papos {
+    background-color: #4a5a31; 
+    width: 90%; 
+    border-radius: 20px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+}
+
+
+.papos h1 {
+    text-align: center;
+    color: #7faccf; 
+    font-size: 28px; 
+    margin-bottom: 15px; 
+    font-weight: 700;
+}
+
+
+.papos p {
+    text-align: center; 
+    color: #dcdcdc; 
+    margin-top: 5px;
+    font-size: 20px; 
+    line-height: 1.6; 
+    max-width: 1200px;
+}
+
+
+.papos:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); 
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    border-top: 3px solid #9b2d20;
+    margin: 0;
+}
+
+.nasv{
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    background-color: #606a90;
+    width: 90%;
+    border-radius: 15px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.nasv a{
+    flex: 20%;
+}
+
+main {
+    background-color: #1D2130;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.carousel {
+    position: relative;
+    width:40%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2em;
+    z-index: 10;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel {
+        width: 100%;
+    }
+
+    button {
+        font-size: 1.5em;
+        padding: 8px;
+    }
+}
+
+.papos {
+    width: 95%; 
+    padding: 15px; 
+}
+
+.papos h1 {
+    font-size: 24px; 
+}
+
+.papos p {
+    font-size: 14px; 
+}
+
+.reta {
+    flex-direction: row;
+    display: flex;
+    width: 95%;
+    margin-left: 20px; 
+}
+
+.orga {
+    flex: 23%;
+}
+
+.caixa {
+    background-color: #333;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 90%;
+    height: flex;
+    margin-right: 20px;
+    margin: 10px 20px 20px 10px;  
+}
+
+.caixa:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);  
+}
+
+.caixa img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #00bcd4; 
+}
+
+.caixa p {
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    text-align: center;
+    margin: 15px 10px;
+}
+
+.caixa a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.caixa a:hover {
+    color: #00bcd4;
+}
+
+.sla {
+    margin-right: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    background-color: #1D2130;
+    color: #f1f1f1;
+}
+
+footer p {
+    margin-left: 10px;
+    text-align: left;
+}
+
+footer h1 {
+    text-align: center;
+}
+
+.reto {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.menu {
+    font-size: 25px;
+    color: rgb(255, 0, 0);
+    margin-left: 10px;
+    width: 23px;
+    cursor: pointer;
+}
+
+.logos {
+    flex: 20%;
+    margin-right: ;
+    margin-top: 2px;
+    text-align: right;
+}
+
+.logos img {
+    width: 50px;
+}
+
+.contaF {
+    text-align: left;
+    margin-left: 70px;
+    flex: 20%;
+}
+
+.game {
+    align-items: center;
+    text-align: center;
+    flex: 100%;
+}
+
+.game h1 {
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        margin-left: auto;
+    }
+
+    .etc {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+
+    nav a{
+        margin-left: 0px;
+    }
+
+    .nasv {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contaF {
+        width: 20%;
+        margin-top: 10px;
+        margin-right:auto;
+    }
+
+    .game {
+        flex: 20%;
+    }
+
+    .reta {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .reto {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .menu {
+        font-size: 30px;
+        margin: 10px;
+    }
+}
